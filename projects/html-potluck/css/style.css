@@ -15,3 +15,25 @@ body {
     max-width: 1440px;
     margin: 0px auto;
 }
+
+#cookbook #header > div, #cookbook .card {
+    background-color: #140849;
+    color: #dbd3ff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 40px;
+    margin: 40px auto;
+}
+
+#card-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    .card {
+        min-width: 325px;
+        flex: 1;
+        padding: 25px;
+        margin: 0px;
+        text-align: left;
+    }
+}

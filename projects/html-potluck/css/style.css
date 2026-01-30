@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+    padding-bottom: 40px;
+}
+#cookbook {
+    background-color: #dbd3ff;
+}
+.contain {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0px auto;
+}

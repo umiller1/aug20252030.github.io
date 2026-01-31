@@ -3,12 +3,28 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: sans-serif;
-    padding-bottom: 40px;
 }
-#cookbook {
-    background-color: #dbd3ff;
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #111;
+}
+hr {
+    border: none;
+    border-bottom: 0.5px solid #fff;
+    margin: 20px 0px;
+}
+.ic img {
+    height: 100%;
 }
 .contain {
     width: 90vw;
@@ -16,6 +32,10 @@ body {
     margin: 0px auto;
 }
 
+/* Cookbook Page Styles */
+#cookbook {
+    background-color: #dbd3ff;
+}
 #cookbook #header > div, #cookbook .card {
     background-color: #140849;
     color: #dbd3ff;
@@ -24,16 +44,253 @@ body {
     border-radius: 40px;
     margin: 40px auto;
 }
-
 #card-container > div {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    .card {
-        min-width: 325px;
+}
+#card-container > div .card {
+    container-type: inline-size;
+    container-name: card;
+    min-width: 325px;
+    flex: 1;
+    padding: 25px 25px 0px;
+    margin: 0px;
+    text-align: left;
+    color: #eee;
+    h2 {
+        text-align: center;
+        text-wrap: pretty;
+    }
+    img {
+        height: 200px;
+        margin: 10px 0px;
+        border: 3px solid #dbd3ff;
+        border-image: linear-gradient(45deg, #dbd3ff, #dbd3ff00, #fff0, #dbd3ff00, #dbd3ff) 1;
+    }
+    p, li {
+        font-weight: 200;
+    }
+    b {
+        font-weight: 600;
+    }
+    ul, ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0px 25px;
+        list-style-position: inside;
+    }
+    ul {
+        li {
+            width: 100%;
+        }
+    }
+}
+@container card (width >= 400px) {
+    #card-container > div .card ul li {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Movie Showcase Styles */
+#movie h1 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #111a;
+    backdrop-filter: blur(10px);
+    color: #eee;
+    padding: 10px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#movie #header {
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#movie #header .card {
+    display: grid;
+    grid-template-rows: 80% 1fr;
+    .ic {
+        height: 100%;
+    }
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        background-color: #111;
+    }
+    &:nth-child(2n) h2 {
+        background-color: #ffc800;
+        a {
+            color: #111;
+        }
+    }
+    a {
+        color: #ffc800;
+    }
+}
+#movie #main {
+    background-color: #111;
+}
+#movie .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+#movie .section .contain {
+    background-color: #fff;
+    display: flex;
+    gap: 50px;
+    min-height: 50%;
+    padding-left: 25px;
+    .content {
         flex: 1;
-        padding: 25px;
-        margin: 0px;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ic {
+        flex: 1;
+    }
+}
+
+/* Playlists Page Styles */
+#playlist {
+    background-image: url("../images/mesh-gradient.png");
+    background-size: 100vh;
+    display: grid;
+    grid-template-rows: max-content minmax(0px, 1fr);
+    gap: 25px;
+    justify-content: center;
+    height: 100dvh;
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 25px;
+        font-family: monospace;
+        letter-spacing: 2px;
+        font-variant: small-caps;
+        span:first-child {
+            color: #6d4cff44;
+            margin-right: -8px;
+            font-size: 70%;
+        }
+        span:nth-child(2) {
+            color: #6d4cff88;
+            margin-right: -8px;
+        }
+        span:last-child {
+            color: #6d4cff;
+            font-size: 130%;
+        }
+    }
+}
+#playlist #player {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+#player .nowp, #player #c2 {
+    backdrop-filter: blur(25px);
+    background-color: #fff2;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: -2px 2px 4px #1113;
+}
+#player #c1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    img {
+        border-radius: 25px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 15px;
+    }
+    .content h6 {
+        flex: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .col {
+        flex: 1;
+    }
+    .col h2 {
+        margin-bottom: 10px;
+    }
+    .fakePlayer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        i {
+            cursor: pointer;
+        }
+    }
+    .fakePlayer .line {
+        position: relative;
+        cursor: pointer;
+        background: linear-gradient(to right, #6d4cff 30%, #6d4cff22 30% 100%);
+        min-width: 50px;
+        width: 100%;
+        height: 4px;
+        border: 0.5px solid #6d4cff;
+    }
+    .line span {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #6d4cff;
+        border: 0.5px solid #140849;
+    }
+    .fakePlayer .row {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+#player #c2 {
+    box-shadow: 2px 2px 4px #1113;
+    h3 {
+        margin-bottom: 25px;
+    }
+    ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    li {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .ic {
+        flex: 1;
+        aspect-ratio: 1 / 1;
+        min-height: 85px;
+        max-height: 150px;
+        max-width: 150px;
+    }
+    .content {
+        flex: 1;
     }
 }

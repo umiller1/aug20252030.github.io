@@ -1,0 +1,25 @@
+.color {
+    display: inline-block;
+    max-width: 400px;
+    width: 30%;
+    background-color: #d7d7d755;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 25px;
+    margin: 0px 10px;
+}
+.color span {
+    display: block;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+#p1-c1 span {
+    background-color: #f8daff;
+}
+#p1-c2 span {
+    background-color: #ef9acc;
+}
+#p1-c3 span {
+    background-color: #ffb592;
+}

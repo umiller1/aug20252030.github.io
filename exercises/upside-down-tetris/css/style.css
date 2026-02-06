@@ -1,0 +1,29 @@
+#container {
+    width: 500px;
+    min-height: 100vh;
+    background-color: #0f0326;
+    font-size: 0px;
+}
+.block {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: antiquewhite;
+    border: 10px outset antiquewhite;
+}
+.lavender {
+    background-color: #f7c2ff;
+    border-color: #f7c2ff;
+}
+.periwinkle {
+    background-color: #bebbff;
+    border-color: #bebbff;
+}
+.chartreuse {
+    background-color: #d6ffad;
+    border-color: #d6ffad;
+}
+.tomat {
+    background-color: tomato;
+    border-color: tomato;
+}

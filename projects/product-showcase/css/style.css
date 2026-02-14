@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+}
+h1, h2, h3, h6, .logo {
+    font-family: "Bagel Fat One", system-ui;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.btn {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ed8434;
+    border: 0.5px solid #ed8434;
+    font-weight: 600;
+    transition: 
+        background-color 0.5s, color 0.5s,
+        border-color 0.5s, box-shadow 0.5s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #ffcc34;
+    border-color: #ffcc34;
+    box-shadow: 2px 2px 2px #1112;
+}
+.contain {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+/* Nav */
+header {
+    border-bottom: 0.5px solid #ffcc34;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+nav .logo {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: #ed8434;
+    font-size: 1.5rem;
+}
+.logo .star {
+    font-size: 50%;
+    color: #ffcc34;
+}
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+nav .links a {
+    padding: 25px 0px;
+}
+/* Hero */
+main #hero {
+    min-height: 50dvh;
+    background-image: url("../images/nendoroids.webp");
+    background-size: cover;
+    background-position: center 25%;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    border-bottom: 0.5px solid #ed8434;
+    padding: 50px 0px;
+}
+section:nth-of-type(3n) {
+    background-color: #333;
+    color: #fff;
+}
+section img {
+    width: 300px;
+    display: block;
+    margin: 15px auto;
+}
+section p {
+    max-width: 600px;
+    margin: 0px auto;
+}
+section .desc {
+    margin: 15px auto;
+}
+section .price {
+    border: 0.5px solid #ed8434;
+    width: max-content;
+    padding: 5px 30px;
+    margin: 0px auto;
+    font-weight: 200;
+    color: #ed8434;
+    background: #ed8434;
+    background: 
+        linear-gradient(45deg, #ed8434 0%, #ffcc34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0px;
+}

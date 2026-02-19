@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.single-column {
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.card {
+    border: 5px solid #3aec46;
+    padding: 25px;
+    text-align: center;
+}
+.card h3 {
+    margin: 0px;
+    font-size: 35px;
+}
+.card p {
+    margin: 25px 0px 0px;
+}
+
+.sbs {
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sbs .content {
+    flex: 1;
+}
+.sbs .image-container {
+    flex: 2;
+}
+.sbs h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.sbs h2 {
+    text-align: left;
+    font-size: 40px;
+    margin: 5px 0px 50px;
+}
+.sbs p {
+    font-weight: 300;
+    line-height: 1.75em;
+}
+.sbs a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.sbs img {
+    height: 100%;
+}

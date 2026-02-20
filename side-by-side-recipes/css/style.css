@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.single-column {
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.sbs {
+    display: flex;
+    gap: 25px;
+    padding: 50px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sbs img {
+    height: 100%;
+}
+.sbs .times {
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.stack {
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    gap: 50px;
+}

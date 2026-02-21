@@ -65,6 +65,52 @@ section {
         color: #f3fff1;
     }
 }
+section.css {
+    border: 1px solid #00b7ff;
+    > h2 {
+        color: #00b7ff;
+    }
+    .element:nth-of-type(2n) {
+        background-color: #e2f4ff;
+    }
+    .element p.desc {
+        border-left: 1px solid #00b7ff;
+    }
+    .element p.lvl {
+        background-color: #ff7b00;
+        color: #f1fcff;
+    }
+    .element p.lvl.i {
+        background-color: #00b7ff;
+        color: #e2f4ff;
+    }
+    .sig {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #ff00c3;
+        &.c {
+            background-color: #ff00c3;
+            display: inline-block;
+        }
+        &.ns {
+            background-color: #ff00c3;
+            display: inline-block;
+            width: 1.5px;
+            height: 20px;
+        }
+    }
+    .example {
+        color: #82004e;
+        font-size: 0.9rem;
+        display: inline-block;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .value {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
 
 @media screen and (max-width: 700px) {
     section {

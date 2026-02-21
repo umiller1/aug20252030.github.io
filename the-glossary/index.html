@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <h2>HTML</h2>
         <section id="containers" class="section">
             <h2>Container Elements</h2>
             <div id="div" class="element">
@@ -197,6 +198,136 @@
                     <strong>List Item:</strong>
                     Semantic child element of a list element. Can only
                     be used in an ol or ul as the direct child.
+                </p>
+                <p class="lvl"><em>block</em></p>
+            </div>
+        </section>
+        <h2>CSS</h2>
+        <section id="selectors" class="section css">
+            <h2>CSS Selectors & Combinators</h2>
+            <div id="htmlelement" class="element">
+                <p class="name">div {...}</p>
+                <p class="desc">
+                    <strong>HTML Element Selector:</strong>
+                    Selects any and all elements whose tag/element name matches
+                    the selector name.
+                </p>
+            </div>
+            <div id="class" class="element">
+                <p class="name"><span class="sig">.</span>card {...}</p>
+                <p class="desc">
+                    <strong>Class Selector:</strong>
+                    Selects any and all elements whose class attribute value matches
+                    the selector name.
+                </p>
+            </div>
+            <div id="id" class="element">
+                <p class="name"><span class="sig">#</span>logo {...}</p>
+                <p class="desc">
+                    <strong>ID Selector:</strong>
+                    Selects the one element whose ID attribute value matches
+                    the selector name.
+                </p>
+            </div>
+            <div id="descendant" class="element">
+                <p class="name">div<span class="sig c">&nbsp;</span>p {...}</p>
+                <p class="desc">
+                    <strong>Descendant Selector:</strong>
+                    Selects the descendant element. The element to the
+                    right of the space is what is targeted and is the descendant.
+                    The element to the left of the space is the ascendant.
+                    <span class="example">
+                        The example targets p elements that are descendants of div
+                        elements.
+                    </span>
+                </p>
+            </div>
+            <div id="child" class="element">
+                <p class="name">div <span class="sig ">></span> p {...}</p>
+                <p class="desc">
+                    <strong>Child Selector:</strong>
+                    Selects the direct child(ren) element. The element to the 
+                    right of the greater than symbol is a child of the element
+                    to the left of the greater than symbol.
+                    <span class="example">
+                        The example targets p elements that are children of div
+                        elements.
+                    </span>
+                </p>
+            </div>
+            <div id="selectorList" class="element">
+                <p class="name">
+                    h1<span class="sig">,</span><br>
+                    h2<span class="sig">,</span><br>a {...}
+                </p>
+                <p class="desc">
+                    <strong>Selector List:</strong>
+                    Selects a group of related or unrelated elements to target
+                    them separately under the same rule and share properties.
+                    <span class="example">
+                        The example targets h1 elements, and/or h2 elements 
+                        and/or anchor elements.
+                    </span>
+                </p>
+            </div>
+            <div id="compound" class="element">
+                <p class="name">div<span class="sig ns"></span>#hero</p>
+                <p class="desc">
+                    <strong>Compound Selector:</strong>
+                    Selects elements only if they have the corresponding 
+                    attached attribute(s).
+                    <span class="example">
+                        The example targets the div element only if it
+                        also has an ID attribute value of hero.
+                    </span>
+                </p>
+            </div>
+        </section>
+        <h2>CSS Properties</h2>
+        <section id="textProperties" class="section css">
+            <h2>Font Properties</h2>
+            <div id="fsize" class="element">
+                <p class="name">font-size: 16px;</p>
+                <p class="desc">
+                    <strong>Font Size:</strong> Changes the size of
+                    the text.
+                    <br><strong class="value">Value(s):</strong> Any unit number.
+                </p>
+                <p class="lvl c"><em>Cascading</em></p>
+            </div>
+            <div id="fweight" class="element">
+                <p class="name">font-weight: 400;</p>
+                <p class="desc">
+                    <strong>Font Weight:</strong>
+                    Changes the thickness of the text.
+                    <br><strong class="value">Value(s):</strong> Any integer
+                    number between 100-900 <b>or</b> 
+                </p>
+                <p class="lvl c"><em>cascading</em></p>
+            </div>
+            <div id="fstyle" class="element">
+                <p class="name">&lt;section&gt;...&lt;/section&gt;</p>
+                <p class="desc">
+                    <strong>Section:</strong>
+                    Semantic Container. Requires heading child.
+                </p>
+                <p class="lvl"><em>block</em></p>
+            </div>
+            <div id="ffamily" class="element">
+                <p class="name">&lt;header&gt;...&lt;/header&gt;</p>
+                <p class="desc">
+                    <strong>Header:</strong>
+                    Semantic Container. Must be at the top of its
+                    container/Msut be first child.
+                </p>
+                <p class="lvl"><em>block</em></p>
+            </div>
+            <div id="nav" class="element">
+                <p class="name">&lt;nav&gt;...&lt;/nav&gt;</p>
+                <p class="desc">
+                    <strong>Navigation:</strong>
+                    Semantic Container. Requires at least one anchor
+                    element or button element.
                 </p>
                 <p class="lvl"><em>block</em></p>
             </div>

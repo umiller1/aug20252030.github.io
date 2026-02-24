@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Resets Below */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+h1, h2, h3, .logo {
+    font-family: "Ubuntu", sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.sc {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.ic img {
+    /* Makes sure images inside of image contains fit proportionately */
+    height: 100%; 
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 0.5px solid #a4c5ff;
+    color: #5895ff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+.btn.alt {
+    background-color: #5895ff;
+    border-color: #5895ff;
+    color: #e4eeff;
+}
+/* Resets Above */
+/* Site Scaffolding Styles Start */
+header {
+    border-bottom: 0.5px solid #a4c5ff;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+nav a {
+    text-decoration: none;
+    color: #111;
+    padding: 25px 0px;
+}
+nav div {
+    display: flex;
+    gap: 20px;
+}
+nav .logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+    color: #5895ff;
+}
+/* Site Scaffolding Styles END */
+
+/* Mebay Styles Start */
+main.sc {
+    display: flex; /* Gets columns side by side. */
+    gap: 25px; /* Spacing between columns */
+    padding: 40px 0px;
+}
+main #c1 {
+    width: 150px; /* First column sizing - absolute */
+}
+main #c2 {
+    flex: 2; /* Second column sizing - relative/responsive */
+}
+main #c3 {
+    flex: 1; /* Second column sizing - relative/responsive */
+}
+/* Styles for First Column & Its Content */
+#c1 .ic {
+    height: 150px;
+    margin: 15px 0px;
+}
+#c1 .ic:first-child {
+    margin-top: 0px;
+}
+
+/* Styles for Second Column & Its Content */
+#c2 .ic {
+    /* Makes sure main image's container fills column vertically */
+    height: 100%;
+}
+
+/* Styles for Third Column & Its Content */
+#c3 h1 {
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #a4c5ff;
+}
+#c3 .info {
+    margin: 20px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#c3 .ic {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #a4c5ff, #ff8cc7);
+}
+#c3 .ic img {
+    border-radius: 50%;
+}
+#c3 .info p {
+    margin-top: 10px;
+}
+#c3 .price {
+    border-top: 0.5px solid #a4c5ff;
+    padding: 20px 0px 10px;
+    text-align: center;
+}
+#c3 .price + p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#c3 .btn {
+    display: block;
+    margin: 10px 0px;
+}

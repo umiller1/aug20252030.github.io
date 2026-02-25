@@ -1,0 +1,70 @@
+/* Resets Below */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+/* Resets Above */
+
+#centered-hero {
+    background-image: url("../images/lonely-ocean.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 72px;
+    margin: 0px;
+}
+.content p {
+    font-size: 20px;
+    margin: 15px 0px 25px;
+}
+.content .btn {
+    background-color: black;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+#side-hero {
+    background-image: url("../images/snowy-wasteland.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+    text-align: right;
+    color: white;
+}
+
+#contrast-hero {
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../images/placid-waters.jpg");
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contrast-hero .content {
+    background-color: #ffffff00;
+    padding: 72px;
+    border-radius: 60px;
+    backdrop-filter: blur(10px);
+}

@@ -1,0 +1,23 @@
+/* Resets Below */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+/* Resets Above */
+.single-column {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.basic-gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

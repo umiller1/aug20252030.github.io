@@ -1,0 +1,180 @@
+/* Resets Below */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+}
+.btn {
+    background-color: #33a4ea;
+    border: 1px solid #33a4ea;
+    color: #d4efff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    flex: 1;
+    transition: background-color 0.5s, flex 0.5s;
+    &:hover {
+        backdrop-filter: blur(20px);
+        background-color: #fff2dc00;
+        flex: 2;
+        color: #33a4ea;
+    }
+    &.alt {
+        background-color: #fff2dc00;
+        color: #33a4ea;
+        flex: 1;
+    }
+    &.alt:hover {
+        backdrop-filter: blur(20px);
+        background-color: #33a4ea;
+        flex: 2;
+        color: #d4efff;
+    }
+}
+.btns {
+    max-width: 80%;
+    margin: 0px auto;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+/* Resets Above */
+.sc {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+header {
+    background: 
+        linear-gradient(0deg, #fff2dc, #1110, #1110, #1110),
+        url("../images/portugal-1.jpg")
+    ;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+header .sc {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+header h1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 4rem;
+}
+
+main {
+    background-color: #fff2dc;
+}
+.gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+    gap: 25px;
+    padding: 80px 0px;
+}
+.gal .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+.gal .card:not(.copyOnly) p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddcffaa;
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+.gal .card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+.gal .copyOnly {
+    padding: 15px;
+    border: 1px solid #dddcff;
+    font-size: 1.25rem;
+    text-wrap: pretty;
+}
+.gal img,
+.gal .ic {
+    width: 100%;
+    height: 100%;
+}
+
+/* Thai */
+#thai header {
+    background: 
+        linear-gradient(0deg, #1a1c01, #1110, #1110, #1110),
+        url("../images/thai-3.jpg")
+    ;
+    background-size: cover;
+    background-position: center center;
+}
+
+#thai main {
+    background-color: #1a1c01;
+}
+#thai .gal {
+    display: flex;
+    flex-wrap: wrap;
+}
+#thai .gal .card {
+    flex: 1 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    background-color: #eaa733;
+    gap: 25px;
+}
+#thai .card .ic {
+    flex: 1;
+    height: 100%;
+}
+#thai .card .content {
+    flex: 2;
+    padding: 25px 25px 25px 0px;
+}
+#thai .gal .card:not(.copyOnly) p {
+    position: static;
+}
+#thai .gal p {
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+    font-size: 1rem;
+}
+#thai .gal img {
+    display: block;
+}
